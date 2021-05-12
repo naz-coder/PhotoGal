@@ -106,10 +106,41 @@ header a:hover{
     height : 30px;
     width  : 300px;
 }
+/* wrapper */
+.wrapper{
+    margin: .5vw;
+    font-size: 6px;
+    display: -ms-flexbox;
+    -ms-flexbox-wrap: wrap;
+    -ms-flexbox-direction: column;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    display: -webkit-box;
+    display: flex;
+}
+.wrapper div{
+    -webkit-box-flex: auto;
+    -ms-flex: auto;
+    flex: auto;
+    width: 200px;
+    margin: .5vw;
+}
+.wrapper div img{
+    width: 100%;
+    height: auto;
+}
 footer{
     padding         : 15px;
     margin-top      : 20px;
     color           : #ffffff;
     background-color: #834711;
     text-align      : center;
+}
+@media screen and (max-width: 400px){
+    .wrapper div{
+        margin: 0;
+    }
+    .wrapper {
+        padding: 0;
+    }
 }
