@@ -5,7 +5,7 @@ body{
     font            : 15px/1.5 Arial, Helvetica, sans-serif;
     padding         : 0;
     margin          : 0;
-    background-color: #f4f4f4;
+    background-color: #f4f4f4;    
 }
 /* label */
 .container{
@@ -33,7 +33,6 @@ ul{
     margin-top   : 10px;
     margin-bottom: 10px;
 }
-
 /* header */
 header{
     background   : #14210F;
@@ -87,6 +86,10 @@ header a:hover{
 #showcase p{
     font-size    : 20px;
 }
+/* horizontal line */
+hr{
+    width: 10%;
+}
 /* search */
 #search{
     padding   : 15px;
@@ -137,10 +140,46 @@ footer{
     text-align      : center;
 }
 @media screen and (max-width: 400px){
+    header #branding,
+    header nav,
+    header nav li,
+    #search h1,
+    #search form
+    {
+        text-align: center;
+        width     : 100%;
+        margin: 0px;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    header nav{
+        padding-right: 20px;
+    }
+    #showcase h1{
+        margin-top    : 40px;
+    }
+    #showcase p{
+        font-size: 15px;
+    }
+    #search button, .quote button{
+        display: block;
+        width  : 100%;
+        border-radius: 0px 0px 5px 5px;
+    }
+    #search form input .quote input, .quote textarea{
+        width        : 100%;
+        margin-bottom: 5px;
+    }
     .wrapper div{
         margin: 0;
     }
     .wrapper {
         padding: 0;
+    }
+    .wrapper h1{
+        font-size: 13px;
+        text-align: center;
+        margin-top: 1px;
     }
 }
