@@ -70,6 +70,11 @@ header a:hover{
     color      : #cccccc;
     font-weight: bold;
 }
+/* img */
+img:hover{
+    opacity: .5;
+    transition: .9s;
+}
 /* showcase */
 #showcase{
     min-height     : 400px;
